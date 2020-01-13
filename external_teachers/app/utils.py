@@ -269,3 +269,9 @@ def get_pro_category_dict(teacher):
   else:
     return {}
 
+def get_typology_dict(teacher):
+  if teacher.typology:
+    typology = teacher.typology
+    return {'id': typology.id, 'name': typology.name}
+  else:
+    return {}

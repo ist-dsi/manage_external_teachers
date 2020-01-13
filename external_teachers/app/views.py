@@ -231,6 +231,7 @@ def get_external_teacher(request, pk):
 				'close_date' : close_date,
 				'closed_by': closed_by,
 				'professional_category' : utils.get_pro_category_dict(external_teacher),
+				'typology' : utils.get_typology_dict(external_teacher),
 				'hours_per_week' : '%.2f' % external_teacher.hours_per_week,
 				'park' : external_teacher.park,
 				'card' : external_teacher.card,

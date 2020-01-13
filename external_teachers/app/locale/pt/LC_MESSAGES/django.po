@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-02-06 15:01+0000\n"
+"POT-Creation-Date: 2019-11-28 15:21+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,136 +19,146 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
 #: forms.py:25
+msgid "select_typology"
+msgstr "---Selecione uma tipologia---"
+
+#: forms.py:30
 msgid "IST ID"
 msgstr "IST ID"
 
-#: forms.py:26
+#: forms.py:31
 msgid "name"
 msgstr "Nome"
 
-#: forms.py:27 models.py:58
+#: forms.py:32 models.py:58
 msgid "semester"
 msgstr "Semestre"
 
-#: forms.py:28
+#: forms.py:33
 msgid "hours_per_week"
 msgstr "N.º de horas lectivas devidas por semana"
 
-#: forms.py:29
+#: forms.py:34
 msgid "department"
 msgstr "Departamento"
 
-#: forms.py:30
+#: forms.py:35
+msgid "typology"
+msgstr "Tipologia"
+
+#: forms.py:36
 msgid "degree"
 msgstr "Formação académica"
 
-#: forms.py:31
+#: forms.py:37
 msgid "course"
 msgstr "Unidade curricular"
 
-#: forms.py:32
+#: forms.py:38
 msgid "course_manager"
 msgstr "Responsável da unidade curricular"
 
-#: forms.py:33
+#: forms.py:39
 msgid "costs_center"
 msgstr "Centro de Custos que Suporta o Complemento de Bolsa (Opcional)"
 
-#: forms.py:34
+#: forms.py:40
 msgid "notes"
 msgstr "Observações"
 
-#: models.py:119
+#: models.py:120
 msgid "error.same.semester"
 msgstr "Já existe uma proposta para este aluno no semestre seleccionado"
 
-#: utils.py:71 utils.py:76 utils.py:120 utils.py:125 utils.py:130
-msgid "True"
-msgstr "Y"
-
-#: utils.py:73 utils.py:78 utils.py:122 utils.py:127 utils.py:132
-msgid "False"
-msgstr "N"
-
-#: utils.py:100
+#: utils.py:68
 msgid "TheUser"
 msgstr "Utilizador"
 
-#: utils.py:101
+#: utils.py:69
 msgid "Category code"
 msgstr "Código da categoria"
 
-#: utils.py:102
+#: utils.py:70
 msgid "Department acronym"
 msgstr "Acronimo do departamento"
 
-#: utils.py:103
+#: utils.py:71
 msgid "Hours"
 msgstr "Horas"
 
-#: utils.py:104
+#: utils.py:72
 msgid "Engaged"
 msgstr "Contratado"
 
-#: utils.py:105 templates/app/external_teachers_list.html:169
-#: templates/app/external_teachers_list.html:277
-msgid "Name"
-msgstr "Nome"
+#: utils.py:74 utils.py:115 utils.py:120
+msgid "False"
+msgstr "N"
 
-#: utils.py:106
-msgid "Category"
-msgstr "Categoria"
+#: utils.py:98 templates/app/external_teachers_list.html:168
+#: templates/app/external_teachers_list.html:275
+msgid "Id"
+msgstr "ID"
 
-#: utils.py:107 templates/app/base.html:52
-#: templates/app/external_teachers_list.html:174
-#: templates/app/external_teachers_list.html:312
-msgid "Department"
-msgstr "Departamento"
+#: utils.py:99 templates/app/external_teachers_list.html:170
+#: templates/app/external_teachers_list.html:298
+msgid "Professional category"
+msgstr "Categoria profissional"
 
-#: utils.py:108
-msgid "Period"
-msgstr "Período"
+#: utils.py:100 templates/app/external_teachers_list.html:306
+msgid "Hours per week"
+msgstr "Horas por semana"
 
-#: utils.py:109 templates/app/external_teachers_list.html:289
-msgid "Authorized by"
-msgstr "Autorizado por"
-
-#: utils.py:110 templates/app/external_teachers_list.html:172
-#: templates/app/external_teachers_list.html:304
+#: utils.py:101 templates/app/external_teachers_list.html:173
+#: templates/app/external_teachers_list.html:310
 msgid "Park"
 msgstr "Parque"
 
-#: utils.py:111 templates/app/external_teachers_list.html:173
-#: templates/app/external_teachers_list.html:308
+#: utils.py:102 templates/app/external_teachers_list.html:174
+#: templates/app/external_teachers_list.html:314
 msgid "Card"
 msgstr "Cartão"
 
-#: utils.py:112 templates/app/external_teachers_list.html:175
-#: templates/app/external_teachers_list.html:316
+#: utils.py:103 templates/app/base.html:52
+#: templates/app/external_teachers_list.html:175
+#: templates/app/external_teachers_list.html:318
+msgid "Department"
+msgstr "Departamento"
+
+#: utils.py:104 templates/app/external_teachers_list.html:169
+#: templates/app/external_teachers_list.html:279
+msgid "Name"
+msgstr "Nome"
+
+#: utils.py:105 templates/app/external_teachers_list.html:176
+#: templates/app/external_teachers_list.html:322
 msgid "Degree"
 msgstr "Formação académica"
 
-#: utils.py:113 templates/app/external_teachers_list.html:320
+#: utils.py:106 templates/app/external_teachers_list.html:326
 msgid "Course"
 msgstr "Unidade curricular"
 
-#: utils.py:114 templates/app/external_teachers_list.html:324
+#: utils.py:107 templates/app/external_teachers_list.html:330
 msgid "Course manager"
 msgstr "Responsável da unidade curricular"
 
-#: utils.py:115 templates/app/external_teachers_list.html:328
+#: utils.py:108 templates/app/external_teachers_list.html:334
 msgid "Costs Center"
 msgstr "Centro de Custos que Suporta o Complemento de Bolsa"
 
-#: utils.py:116 templates/app/external_teachers_list.html:333
+#: utils.py:109 templates/app/external_teachers_list.html:339
 msgid "Notes"
 msgstr "Observações"
 
-#: views.py:164 views.py:180 templates/app/external_teachers_list.html:67
+#: utils.py:113 utils.py:118
+msgid "True"
+msgstr "Y"
+
+#: views.py:171 views.py:187 templates/app/external_teachers_list.html:66
 msgid "Yes"
 msgstr "Sim"
 
-#: views.py:167 views.py:183 templates/app/external_teachers_list.html:70
+#: views.py:174 views.py:190 templates/app/external_teachers_list.html:69
 msgid "No"
 msgstr "Não"
 
@@ -184,7 +194,7 @@ msgstr "Propostas em aberto"
 msgid "Submit"
 msgstr "Submeter"
 
-#: templates/app/external_teachers_list.html:75
+#: templates/app/external_teachers_list.html:74
 msgid "loading"
 msgstr "A carregar..."
 
@@ -197,7 +207,7 @@ msgid "choose_action"
 msgstr "Acção"
 
 #: templates/app/external_teachers_list.html:145
-#: templates/app/external_teachers_list.html:340
+#: templates/app/external_teachers_list.html:346
 msgid "Close"
 msgstr "Fechar"
 
@@ -221,52 +231,47 @@ msgstr "Aplicar aos elementos selecionados"
 msgid "Toggle All"
 msgstr "Selecionar todos"
 
-#: templates/app/external_teachers_list.html:168
-#: templates/app/external_teachers_list.html:273
-msgid "Id"
-msgstr "ID"
-
-#: templates/app/external_teachers_list.html:170
-#: templates/app/external_teachers_list.html:296
-msgid "Professional category"
-msgstr "Categoria profissional"
-
 #: templates/app/external_teachers_list.html:171
+#: templates/app/external_teachers_list.html:302
+msgid "Typology"
+msgstr "Tipologia"
+
+#: templates/app/external_teachers_list.html:172
 msgid "Week hours"
 msgstr "N.º de horas lectivas devidas por semana"
 
-#: templates/app/external_teachers_list.html:199
+#: templates/app/external_teachers_list.html:200
 msgid "no_professional_category"
 msgstr "Sem categoria profissional"
 
-#: templates/app/external_teachers_list.html:232
-#: templates/app/external_teachers_list.html:233
+#: templates/app/external_teachers_list.html:234
+#: templates/app/external_teachers_list.html:235
 msgid "yes,no"
 msgstr "Sim,Não"
 
-#: templates/app/external_teachers_list.html:242
+#: templates/app/external_teachers_list.html:244
 msgid "+ Info"
-msgstr ""
+msgstr "+ Info"
 
-#: templates/app/external_teachers_list.html:249
+#: templates/app/external_teachers_list.html:251
 msgid "Edit"
 msgstr "Editar"
 
-#: templates/app/external_teachers_list.html:281
+#: templates/app/external_teachers_list.html:283
 msgid "Semester"
 msgstr "Semestre"
 
-#: templates/app/external_teachers_list.html:285
+#: templates/app/external_teachers_list.html:287
 msgid "Is closed"
 msgstr "Fechada?"
 
-#: templates/app/external_teachers_list.html:292
+#: templates/app/external_teachers_list.html:291
+msgid "Authorized by"
+msgstr "Autorizado por"
+
+#: templates/app/external_teachers_list.html:294
 msgid "Close date"
 msgstr "Data de fecho"
-
-#: templates/app/external_teachers_list.html:300
-msgid "Hours per week"
-msgstr "Horas por semana"
 
 #: templates/app/index.html:12
 msgid "External Teachers Management tool"
@@ -288,6 +293,12 @@ msgstr "Propostas em aberto"
 msgid "Selected proposals have been closed"
 msgstr "As propostas seleccionadas foram fechadas com sucesso"
 
+#~ msgid "Category"
+#~ msgstr "Categoria"
+
+#~ msgid "Period"
+#~ msgstr "Período"
+
 #, fuzzy
 #~ msgid "User"
 #~ msgstr "Utilizador"
@@ -306,6 +317,3 @@ msgstr "As propostas seleccionadas foram fechadas com sucesso"
 
 #~ msgid "About"
 #~ msgstr "Sobre"
-
-msgid "no_professional_category"
-msgstr "Sem categoria profissional"

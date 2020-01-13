@@ -9,7 +9,7 @@ from django.forms import ModelForm, Textarea, Select, TextInput
 from django.utils.translation import ugettext_lazy as _
 
 #Models
-from app.models import ExternalTeacher, Semester
+from app.models import ExternalTeacher, Semester, Typology
 
 class ExternalTeacherForm(ModelForm):
 
@@ -18,8 +18,13 @@ class ExternalTeacherForm(ModelForm):
         super(ExternalTeacherForm, self).__init__(*args, **kwargs)
         session = arg.session
         deps = session['departments']
-        choices = [(d['acronym'], d['acronym']) for d in deps]
-        self.fields['department'].widget = Select(choices=choices)
+        dep_choices = [(d['acronym'], d['acronym']) for d in deps]
+        self.fields['department'].widget = Select(choices=dep_choices)
+
+        typologies = Typology.objects.all()
+        typology_choices = [(0, _('select_typology'))] + [(t.id, t.name) for t in typologies]
+        self.fields['typology'].widget = Select(choices=typology_choices)
+
 
         # Labels internationalization
         self.fields['ist_id'].label = _('IST ID')
@@ -27,6 +32,7 @@ class ExternalTeacherForm(ModelForm):
         self.fields['semester'].label = _('semester')
         self.fields['hours_per_week'].label = _('hours_per_week')
         self.fields['department'].label = _('department')
+        self.fields['typology'].label = _('typology')
         self.fields['degree'].label = _('degree')
         self.fields['course'].label = _('course')
         self.fields['course_manager'].label = _('course_manager')
@@ -47,6 +53,6 @@ class ExternalTeacherForm(ModelForm):
     class Meta:
         model = ExternalTeacher
         fields = ['ist_id', 'name', 'semester', 'hours_per_week',
-            'department', 'degree', 'course', 'course_manager',
-            'costs_center', 'notes']
+            'department', 'typology', 'degree', 'course',
+            'course_manager', 'costs_center', 'notes']
         widgets = {'notes' : Textarea(), 'name' : TextInput(attrs={'readonly' : 'true'})}
